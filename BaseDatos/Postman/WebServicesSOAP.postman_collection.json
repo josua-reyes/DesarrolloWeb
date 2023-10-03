@@ -1,0 +1,523 @@
+{
+	"info": {
+		"_postman_id": "d989349f-2d88-4a31-9d4b-6d388ac996fa",
+		"name": "WebServicesSOAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30029888",
+		"_collection_link": "https://orange-shuttle-294513.postman.co/workspace/New-Team-Workspace~cded6477-e6f7-4bbf-96b9-9527cf54f8e4/collection/30029888-d989349f-2d88-4a31-9d4b-6d388ac996fa?action=share&source=collection_link&creator=30029888"
+	},
+	"item": [
+		{
+			"name": "GuardarFacturaVenta",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "SOAPAction",
+						"value": "http://tempuri.org/GuardarFacturaVenta",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem=\"http://tempuri.org/\">\r\n    <soap:Header/>\r\n    <soap:Body>\r\n        <tem:GuardarFacturaVenta>\r\n            <tem:guardarFacturaVentaSolicitud>\r\n                <tem:Factura>\r\n                    <tem:IdFactura>0</tem:IdFactura>\r\n                    <tem:Fecha>2023-09-30</tem:Fecha>\r\n                    <tem:IdCliente>1</tem:IdCliente>\r\n                    <tem:DetalleVentas>\r\n                        <tem:Venta>\r\n                            <tem:IdVenta>0</tem:IdVenta>\r\n                            <tem:IdFactura>0</tem:IdFactura>\r\n                            <tem:IdProducto>1</tem:IdProducto>\r\n                            <tem:Cantidad>25</tem:Cantidad>\r\n                        </tem:Venta>\r\n                        <tem:Venta>\r\n                            <tem:IdVenta>0</tem:IdVenta>\r\n                            <tem:IdFactura>0</tem:IdFactura>\r\n                            <tem:IdProducto>3</tem:IdProducto>\r\n                            <tem:Cantidad>20</tem:Cantidad>\r\n                        </tem:Venta>\r\n                        <tem:Venta>\r\n                            <tem:IdVenta>0</tem:IdVenta>\r\n                            <tem:IdFactura>0</tem:IdFactura>\r\n                            <tem:IdProducto>1</tem:IdProducto>\r\n                            <tem:Cantidad>10</tem:Cantidad>\r\n                        </tem:Venta>\r\n                    </tem:DetalleVentas>\r\n                </tem:Factura>\r\n            </tem:guardarFacturaVentaSolicitud>\r\n        </tem:GuardarFacturaVenta>\r\n    </soap:Body>\r\n</soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44390/SegundoParcial.asmx",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44390",
+					"path": [
+						"SegundoParcial.asmx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GuardarFacturaVenta",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GuardarFacturaVenta",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem=\"http://tempuri.org/\">\r\n    <soap:Header/>\r\n    <soap:Body>\r\n        <tem:GuardarFacturaVenta>\r\n            <tem:guardarFacturaVentaSolicitud>\r\n                <tem:Factura>\r\n                    <tem:IdFactura>0</tem:IdFactura>\r\n                    <tem:Fecha>2023-09-30</tem:Fecha>\r\n                    <tem:IdCliente>1</tem:IdCliente>\r\n                    <tem:DetalleVentas>\r\n                        <tem:Venta>\r\n                            <tem:IdVenta>0</tem:IdVenta>\r\n                            <tem:IdFactura>0</tem:IdFactura>\r\n                            <tem:IdProducto>1</tem:IdProducto>\r\n                            <tem:Cantidad>15</tem:Cantidad>\r\n                        </tem:Venta>\r\n                        <tem:Venta>\r\n                            <tem:IdVenta>0</tem:IdVenta>\r\n                            <tem:IdFactura>0</tem:IdFactura>\r\n                            <tem:IdProducto>3</tem:IdProducto>\r\n                            <tem:Cantidad>20</tem:Cantidad>\r\n                        </tem:Venta>\r\n                        <tem:Venta>\r\n                            <tem:IdVenta>0</tem:IdVenta>\r\n                            <tem:IdFactura>0</tem:IdFactura>\r\n                            <tem:IdProducto>1</tem:IdProducto>\r\n                            <tem:Cantidad>10</tem:Cantidad>\r\n                        </tem:Venta>\r\n                    </tem:DetalleVentas>\r\n                </tem:Factura>\r\n            </tem:guardarFacturaVentaSolicitud>\r\n        </tem:GuardarFacturaVenta>\r\n    </soap:Body>\r\n</soap:Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/SegundoParcial.asmx",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"SegundoParcial.asmx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private, max-age=0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/soap+xml; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcTGFwdG9wX0RlbGxcMDJfVU1HXFNFTUVTVFJFU1wwOF9PQ1RBVk9fMjAyM1wwM19ERVNBUlJPTExPX1dFQlxEZXNhcnJvbGxvV2ViXFdlYlNlcnZpY2VzU09BUFxTZWd1bmRvUGFyY2lhbC5hc214?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 02 Oct 2023 05:42:40 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "507"
+						}
+					],
+					"cookie": [],
+					"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\n    <soap:Body>\n        <GuardarFacturaVentaResponse xmlns=\"http://tempuri.org/\">\n            <GuardarFacturaVentaResult>\n                <Estado>EXITO</Estado>\n                <DescripcionError />\n                <NumeroFactura>29</NumeroFactura>\n                <CantidadDetalleVenta>3</CantidadDetalleVenta>\n            </GuardarFacturaVentaResult>\n        </GuardarFacturaVentaResponse>\n    </soap:Body>\n</soap:Envelope>"
+				}
+			]
+		},
+		{
+			"name": "ObtenerCategorias",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "SOAPAction",
+						"value": "http://tempuri.org/ObtenerCategorias",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\">\r\n    <soapenv:Header/>\r\n    <soapenv:Body>\r\n        <tem:ObtenerCategorias/>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44390/SegundoParcial.asmx",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44390",
+					"path": [
+						"SegundoParcial.asmx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ObtenerCategorias",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/ObtenerCategorias",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\">\r\n    <soapenv:Header/>\r\n    <soapenv:Body>\r\n        <tem:ObtenerCategorias/>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/SegundoParcial.asmx",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"SegundoParcial.asmx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private, max-age=0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/xml; charset=utf-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcTGFwdG9wX0RlbGxcMDJfVU1HXFNFTUVTVFJFU1wwOF9PQ1RBVk9fMjAyM1wwM19ERVNBUlJPTExPX1dFQlxEZXNhcnJvbGxvV2ViXFdlYlNlcnZpY2VzU09BUFxTZWd1bmRvUGFyY2lhbC5hc214?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 02 Oct 2023 05:53:30 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1137"
+						}
+					],
+					"cookie": [],
+					"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\n    <soap:Body>\n        <ObtenerCategoriasResponse xmlns=\"http://tempuri.org/\">\n            <ObtenerCategoriasResult>\n                <Estado>EXITO</Estado>\n                <DescripcionError />\n                <Datos>\n                    <xs:schema id=\"NewDataSet\" xmlns=\"\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:msdata=\"urn:schemas-microsoft-com:xml-msdata\" xmlns:msprop=\"urn:schemas-microsoft-com:xml-msprop\">\n                        <xs:element name=\"NewDataSet\" msdata:IsDataSet=\"true\" msdata:MainDataTable=\"Datos\" msdata:UseCurrentLocale=\"true\">\n                            <xs:complexType>\n                                <xs:choice minOccurs=\"0\" maxOccurs=\"unbounded\">\n                                    <xs:element name=\"Datos\" msprop:SqlHash=\"1551788849\" msprop:BaseTable.0=\"CATEGORIAS\" msprop:BaseTable.1=\"PRODUCTOS\">\n                                        <xs:complexType>\n                                            <xs:sequence>\n                                                <xs:element name=\"ID_CATEGORIA\" msprop:OraDbType=\"107\" msprop:BaseColumn=\"ID_CATEGORIA\" type=\"xs:decimal\" minOccurs=\"0\" />\n                                                <xs:element name=\"NOMBRE_CATEGORIA\" msprop:OraDbType=\"126\" msprop:BaseColumn=\"DESCRIPCION\" type=\"xs:string\" minOccurs=\"0\" />\n                                                <xs:element name=\"ID_PRODUCTO\" msprop:OraDbType=\"107\" msprop:BaseColumn=\"ID_PRODUCTO\" type=\"xs:decimal\" minOccurs=\"0\" />\n                                                <xs:element name=\"NOMBRE_PRODUCTO\" msprop:OraDbType=\"126\" msprop:BaseColumn=\"DESCRIPCION\" type=\"xs:string\" minOccurs=\"0\" />\n                                                <xs:element name=\"PRECIO\" msprop:OraDbType=\"107\" msprop:BaseColumn=\"PRECIO\" type=\"xs:decimal\" minOccurs=\"0\" />\n                                            </xs:sequence>\n                                        </xs:complexType>\n                                    </xs:element>\n                                </xs:choice>\n                            </xs:complexType>\n                        </xs:element>\n                    </xs:schema>\n                    <diffgr:diffgram xmlns:msdata=\"urn:schemas-microsoft-com:xml-msdata\" xmlns:diffgr=\"urn:schemas-microsoft-com:xml-diffgram-v1\">\n                        <DocumentElement xmlns=\"\">\n                            <Datos diffgr:id=\"Datos1\" msdata:rowOrder=\"0\">\n                                <ID_CATEGORIA>1</ID_CATEGORIA>\n                                <NOMBRE_CATEGORIA>Electrónica</NOMBRE_CATEGORIA>\n                                <ID_PRODUCTO>1</ID_PRODUCTO>\n                                <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                                <PRECIO>499.99</PRECIO>\n                            </Datos>\n                            <Datos diffgr:id=\"Datos2\" msdata:rowOrder=\"1\">\n                                <ID_CATEGORIA>2</ID_CATEGORIA>\n                                <NOMBRE_CATEGORIA>Ropa</NOMBRE_CATEGORIA>\n                                <ID_PRODUCTO>2</ID_PRODUCTO>\n                                <NOMBRE_PRODUCTO>Camiseta deportiva</NOMBRE_PRODUCTO>\n                                <PRECIO>29.99</PRECIO>\n                            </Datos>\n                            <Datos diffgr:id=\"Datos3\" msdata:rowOrder=\"2\">\n                                <ID_CATEGORIA>3</ID_CATEGORIA>\n                                <NOMBRE_CATEGORIA>Hogar</NOMBRE_CATEGORIA>\n                                <ID_PRODUCTO>3</ID_PRODUCTO>\n                                <NOMBRE_PRODUCTO>Sofá de cuero</NOMBRE_PRODUCTO>\n                                <PRECIO>699.99</PRECIO>\n                            </Datos>\n                            <Datos diffgr:id=\"Datos4\" msdata:rowOrder=\"3\">\n                                <ID_CATEGORIA>4</ID_CATEGORIA>\n                                <NOMBRE_CATEGORIA>Juguetes</NOMBRE_CATEGORIA>\n                                <ID_PRODUCTO>4</ID_PRODUCTO>\n                                <NOMBRE_PRODUCTO>Juego de mesa</NOMBRE_PRODUCTO>\n                                <PRECIO>19.99</PRECIO>\n                            </Datos>\n                            <Datos diffgr:id=\"Datos5\" msdata:rowOrder=\"4\">\n                                <ID_CATEGORIA>5</ID_CATEGORIA>\n                                <NOMBRE_CATEGORIA>Deportes</NOMBRE_CATEGORIA>\n                                <ID_PRODUCTO>5</ID_PRODUCTO>\n                                <NOMBRE_PRODUCTO>Zapatillas de running</NOMBRE_PRODUCTO>\n                                <PRECIO>79.99</PRECIO>\n                            </Datos>\n                        </DocumentElement>\n                    </diffgr:diffgram>\n                </Datos>\n            </ObtenerCategoriasResult>\n        </ObtenerCategoriasResponse>\n    </soap:Body>\n</soap:Envelope>"
+				}
+			]
+		},
+		{
+			"name": "ObtenerClientesPorIdProductoVenta",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "SOAPAction",
+						"value": "http://tempuri.org/ObtenerClientesPorIdProductoVenta",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\">\r\n    <soapenv:Header/>\r\n    <soapenv:Body>\r\n        <tem:ObtenerClientesPorIdProductoVenta>\r\n            <tem:idProducto>1</tem:idProducto>\r\n        </tem:ObtenerClientesPorIdProductoVenta>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44390/SegundoParcial.asmx",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44390",
+					"path": [
+						"SegundoParcial.asmx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ObtenerClientesPorIdProductoVenta",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/ObtenerClientesPorIdProductoVenta",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\">\r\n    <soapenv:Header/>\r\n    <soapenv:Body>\r\n        <tem:ObtenerClientesPorIdProductoVenta>\r\n            <tem:idProducto>1</tem:idProducto>\r\n        </tem:ObtenerClientesPorIdProductoVenta>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/SegundoParcial.asmx",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"SegundoParcial.asmx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private, max-age=0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/xml; charset=utf-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcTGFwdG9wX0RlbGxcMDJfVU1HXFNFTUVTVFJFU1wwOF9PQ1RBVk9fMjAyM1wwM19ERVNBUlJPTExPX1dFQlxEZXNhcnJvbGxvV2ViXFdlYlNlcnZpY2VzU09BUFxTZWd1bmRvUGFyY2lhbC5hc214?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 07:20:09 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "899"
+						}
+					],
+					"cookie": [],
+					"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\n    <soap:Body>\n        <ObtenerClientesPorIdProductoVentaResponse xmlns=\"http://tempuri.org/\">\n            <ObtenerClientesPorIdProductoVentaResult>\n                <ResultadoConsultaDatos xmlns=\"\">\n                    <Estado>EXITO</Estado>\n                    <DescripcionError></DescripcionError>\n                    <NewDataSet>\n                        <Datos>\n                            <ID_FACTURA>38</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>25</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>38</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>39</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>25</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>39</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>11</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>12</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>13</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>15</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>16</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>17</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>18</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>19</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>20</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>22</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>23</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>24</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>15</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>24</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>25</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>15</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>25</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>26</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>15</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>26</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>27</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>15</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>27</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>28</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>15</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>28</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>29</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>15</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>29</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>30</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>15</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>30</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>31</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>25</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>31</ID_FACTURA>\n                            <FECHA>2023-09-30T00:00:00-06:00</FECHA>\n                            <ID_CLIENTE>1</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 1</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>10</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>36</ID_FACTURA>\n                            <FECHA>2023-09-30T13:11:02-06:00</FECHA>\n                            <ID_CLIENTE>2</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 2</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>15</CANTIDAD>\n                        </Datos>\n                        <Datos>\n                            <ID_FACTURA>37</ID_FACTURA>\n                            <FECHA>2023-09-30T13:11:02-06:00</FECHA>\n                            <ID_CLIENTE>2</ID_CLIENTE>\n                            <NOMBRE_CLIENTE>Cliente 2</NOMBRE_CLIENTE>\n                            <ID_PRODUCTO>1</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Televisor LED 40\"</NOMBRE_PRODUCTO>\n                            <CANTIDAD>15</CANTIDAD>\n                        </Datos>\n                    </NewDataSet>\n                </ResultadoConsultaDatos>\n            </ObtenerClientesPorIdProductoVentaResult>\n        </ObtenerClientesPorIdProductoVentaResponse>\n    </soap:Body>\n</soap:Envelope>"
+				}
+			]
+		},
+		{
+			"name": "ObtenerProductosPorIdProveedor",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "SOAPAction",
+						"value": "http://tempuri.org/ObtenerProductosPorIdProveedor",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\">\r\n    <soapenv:Header/>\r\n    <soapenv:Body>\r\n        <tem:ObtenerProductosPorIdProveedor>\r\n            <tem:idProveedor>2</tem:idProveedor>\r\n        </tem:ObtenerProductosPorIdProveedor>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44390/SegundoParcial.asmx",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44390",
+					"path": [
+						"SegundoParcial.asmx"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ObtenerProductosPorIdProveedor",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/ObtenerProductosPorIdProveedor",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\">\r\n    <soapenv:Header/>\r\n    <soapenv:Body>\r\n        <tem:ObtenerProductosPorIdProveedor>\r\n            <tem:idProveedor>2</tem:idProveedor>\r\n        </tem:ObtenerProductosPorIdProveedor>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/SegundoParcial.asmx",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"SegundoParcial.asmx"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "private, max-age=0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/xml; charset=utf-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcTGFwdG9wX0RlbGxcMDJfVU1HXFNFTUVTVFJFU1wwOF9PQ1RBVk9fMjAyM1wwM19ERVNBUlJPTExPX1dFQlxEZXNhcnJvbGxvV2ViXFdlYlNlcnZpY2VzU09BUFxTZWd1bmRvUGFyY2lhbC5hc214?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 07:20:42 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "503"
+						}
+					],
+					"cookie": [],
+					"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\n    <soap:Body>\n        <ObtenerProductosPorIdProveedorResponse xmlns=\"http://tempuri.org/\">\n            <ObtenerProductosPorIdProveedorResult>\n                <ResultadoConsultaDatos xmlns=\"\">\n                    <Estado>EXITO</Estado>\n                    <DescripcionError></DescripcionError>\n                    <NewDataSet>\n                        <Datos>\n                            <ID_PROVEEDOR>2</ID_PROVEEDOR>\n                            <NOMBRE_PROVEEDOR>Proveedor B</NOMBRE_PROVEEDOR>\n                            <ID_PRODUCTO>2</ID_PRODUCTO>\n                            <NOMBRE_PRODUCTO>Camiseta deportiva</NOMBRE_PRODUCTO>\n                            <PRECIO>29.99</PRECIO>\n                            <NOMBRE_CATEGORIA>Ropa</NOMBRE_CATEGORIA>\n                        </Datos>\n                    </NewDataSet>\n                </ResultadoConsultaDatos>\n            </ObtenerProductosPorIdProveedorResult>\n        </ObtenerProductosPorIdProveedorResponse>\n    </soap:Body>\n</soap:Envelope>"
+				}
+			]
+		}
+	]
+}

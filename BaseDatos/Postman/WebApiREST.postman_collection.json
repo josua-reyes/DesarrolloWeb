@@ -1,0 +1,302 @@
+{
+	"info": {
+		"_postman_id": "4fff5310-4fcf-485f-a883-c45b0de5e3f3",
+		"name": "WebApiREST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30029888",
+		"_collection_link": "https://orange-shuttle-294513.postman.co/workspace/New-Team-Workspace~cded6477-e6f7-4bbf-96b9-9527cf54f8e4/collection/30029888-4fff5310-4fcf-485f-a883-c45b0de5e3f3?action=share&source=collection_link&creator=30029888"
+	},
+	"item": [
+		{
+			"name": "GuardarFacturaVenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"factura\": {\r\n        \"idFactura\": 0,\r\n        \"fecha\": \"2023-09-30T13:11:02.177Z\",\r\n        \"idCliente\": 2,\r\n        \"detalleVentas\": [\r\n            {\r\n                \"idVenta\": 0,\r\n                \"idFactura\": 0,\r\n                \"idProducto\": 1,\r\n                \"cantidad\": 15\r\n            },\r\n            {\r\n                \"idVenta\": 0,\r\n                \"idFactura\": 0,\r\n                \"idProducto\": 2,\r\n                \"cantidad\": 20\r\n            },\r\n            {\r\n                \"idVenta\": 0,\r\n                \"idFactura\": 0,\r\n                \"idProducto\": 5,\r\n                \"cantidad\": 8\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7232/api/SegundoParcial/GuardarFacturaVenta",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7232",
+					"path": [
+						"api",
+						"SegundoParcial",
+						"GuardarFacturaVenta"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GuardarFacturaVenta",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"factura\": {\r\n        \"idFactura\": 0,\r\n        \"fecha\": \"2023-09-30T13:11:02.177Z\",\r\n        \"idCliente\": 2,\r\n        \"detalleVentas\": [\r\n            {\r\n                \"idVenta\": 0,\r\n                \"idFactura\": 0,\r\n                \"idProducto\": 1,\r\n                \"cantidad\": 15\r\n            },\r\n            {\r\n                \"idVenta\": 0,\r\n                \"idFactura\": 0,\r\n                \"idProducto\": 2,\r\n                \"cantidad\": 20\r\n            },\r\n            {\r\n                \"idVenta\": 0,\r\n                \"idFactura\": 0,\r\n                \"idProducto\": 5,\r\n                \"cantidad\": 8\r\n            }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7232/api/SegundoParcial/GuardarFacturaVenta",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7232",
+							"path": [
+								"api",
+								"SegundoParcial",
+								"GuardarFacturaVenta"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 02 Oct 2023 07:49:00 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"numeroFactura\": 37,\n    \"cantidadDetalleVenta\": 3,\n    \"estado\": \"EXITO\",\n    \"descripcionError\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "ObtenerCategorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7232/api/SegundoParcial/ObtenerCategorias",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7232",
+					"path": [
+						"api",
+						"SegundoParcial",
+						"ObtenerCategorias"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ObtenerCategorias",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7232/api/SegundoParcial/ObtenerCategorias",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7232",
+							"path": [
+								"api",
+								"SegundoParcial",
+								"ObtenerCategorias"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 08:36:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ResultadoConsultaDatos\": {\n        \"Estado\": \"EXITO\",\n        \"DescripcionError\": \"\",\n        \"NewDataSet\": {\n            \"Datos\": [\n                {\n                    \"ID_CATEGORIA\": \"1\",\n                    \"NOMBRE_CATEGORIA\": \"Electrónica\",\n                    \"ID_PRODUCTO\": \"1\",\n                    \"NOMBRE_PRODUCTO\": \"Televisor LED 40\\\"\",\n                    \"PRECIO\": \"499.99\"\n                },\n                {\n                    \"ID_CATEGORIA\": \"2\",\n                    \"NOMBRE_CATEGORIA\": \"Ropa\",\n                    \"ID_PRODUCTO\": \"2\",\n                    \"NOMBRE_PRODUCTO\": \"Camiseta deportiva\",\n                    \"PRECIO\": \"29.99\"\n                },\n                {\n                    \"ID_CATEGORIA\": \"3\",\n                    \"NOMBRE_CATEGORIA\": \"Hogar\",\n                    \"ID_PRODUCTO\": \"3\",\n                    \"NOMBRE_PRODUCTO\": \"Sofá de cuero\",\n                    \"PRECIO\": \"699.99\"\n                },\n                {\n                    \"ID_CATEGORIA\": \"4\",\n                    \"NOMBRE_CATEGORIA\": \"Juguetes\",\n                    \"ID_PRODUCTO\": \"4\",\n                    \"NOMBRE_PRODUCTO\": \"Juego de mesa\",\n                    \"PRECIO\": \"19.99\"\n                },\n                {\n                    \"ID_CATEGORIA\": \"5\",\n                    \"NOMBRE_CATEGORIA\": \"Deportes\",\n                    \"ID_PRODUCTO\": \"5\",\n                    \"NOMBRE_PRODUCTO\": \"Zapatillas de running\",\n                    \"PRECIO\": \"79.99\"\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "ObtenerProductosPorIdProveedor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7232/api/SegundoParcial/ObtenerProductosPorIdProveedor/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7232",
+					"path": [
+						"api",
+						"SegundoParcial",
+						"ObtenerProductosPorIdProveedor",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ObtenerProductosPorIdProveedor",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7232/api/SegundoParcial/ObtenerProductosPorIdProveedor/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7232",
+							"path": [
+								"api",
+								"SegundoParcial",
+								"ObtenerProductosPorIdProveedor",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 08:37:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ResultadoConsultaDatos\": {\n        \"Estado\": \"EXITO\",\n        \"DescripcionError\": \"\",\n        \"NewDataSet\": {\n            \"Datos\": {\n                \"ID_PROVEEDOR\": \"2\",\n                \"NOMBRE_PROVEEDOR\": \"Proveedor B\",\n                \"ID_PRODUCTO\": \"2\",\n                \"NOMBRE_PRODUCTO\": \"Camiseta deportiva\",\n                \"PRECIO\": \"29.99\",\n                \"NOMBRE_CATEGORIA\": \"Ropa\"\n            }\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "ObtenerClientesPorIdProductoVenta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7232/api/SegundoParcial/ObtenerClientesPorIdProductoVenta/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7232",
+					"path": [
+						"api",
+						"SegundoParcial",
+						"ObtenerClientesPorIdProductoVenta",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ObtenerClientesPorIdProductoVenta",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7232/api/SegundoParcial/ObtenerClientesPorIdProductoVenta/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7232",
+							"path": [
+								"api",
+								"SegundoParcial",
+								"ObtenerClientesPorIdProductoVenta",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 08:38:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ResultadoConsultaDatos\": {\n        \"Estado\": \"EXITO\",\n        \"DescripcionError\": \"\",\n        \"NewDataSet\": {\n            \"Datos\": [\n                {\n                    \"ID_FACTURA\": \"38\",\n                    \"FECHA\": \"2023-09-30T00:00:00-06:00\",\n                    \"ID_CLIENTE\": \"1\",\n                    \"NOMBRE_CLIENTE\": \"Cliente 1\",\n                    \"ID_PRODUCTO\": \"3\",\n                    \"NOMBRE_PRODUCTO\": \"Sofá de cuero\",\n                    \"CANTIDAD\": \"20\"\n                },\n                {\n                    \"ID_FACTURA\": \"39\",\n                    \"FECHA\": \"2023-09-30T00:00:00-06:00\",\n                    \"ID_CLIENTE\": \"1\",\n                    \"NOMBRE_CLIENTE\": \"Cliente 1\",\n                    \"ID_PRODUCTO\": \"3\",\n                    \"NOMBRE_PRODUCTO\": \"Sofá de cuero\",\n                    \"CANTIDAD\": \"20\"\n                },\n                {\n                    \"ID_FACTURA\": \"24\",\n                    \"FECHA\": \"2023-09-30T00:00:00-06:00\",\n                    \"ID_CLIENTE\": \"1\",\n                    \"NOMBRE_CLIENTE\": \"Cliente 1\",\n                    \"ID_PRODUCTO\": \"3\",\n                    \"NOMBRE_PRODUCTO\": \"Sofá de cuero\",\n                    \"CANTIDAD\": \"20\"\n                },\n                {\n                    \"ID_FACTURA\": \"25\",\n                    \"FECHA\": \"2023-09-30T00:00:00-06:00\",\n                    \"ID_CLIENTE\": \"1\",\n                    \"NOMBRE_CLIENTE\": \"Cliente 1\",\n                    \"ID_PRODUCTO\": \"3\",\n                    \"NOMBRE_PRODUCTO\": \"Sofá de cuero\",\n                    \"CANTIDAD\": \"20\"\n                },\n                {\n                    \"ID_FACTURA\": \"26\",\n                    \"FECHA\": \"2023-09-30T00:00:00-06:00\",\n                    \"ID_CLIENTE\": \"1\",\n                    \"NOMBRE_CLIENTE\": \"Cliente 1\",\n                    \"ID_PRODUCTO\": \"3\",\n                    \"NOMBRE_PRODUCTO\": \"Sofá de cuero\",\n                    \"CANTIDAD\": \"20\"\n                },\n                {\n                    \"ID_FACTURA\": \"27\",\n                    \"FECHA\": \"2023-09-30T00:00:00-06:00\",\n                    \"ID_CLIENTE\": \"1\",\n                    \"NOMBRE_CLIENTE\": \"Cliente 1\",\n                    \"ID_PRODUCTO\": \"3\",\n                    \"NOMBRE_PRODUCTO\": \"Sofá de cuero\",\n                    \"CANTIDAD\": \"20\"\n                },\n                {\n                    \"ID_FACTURA\": \"28\",\n                    \"FECHA\": \"2023-09-30T00:00:00-06:00\",\n                    \"ID_CLIENTE\": \"1\",\n                    \"NOMBRE_CLIENTE\": \"Cliente 1\",\n                    \"ID_PRODUCTO\": \"3\",\n                    \"NOMBRE_PRODUCTO\": \"Sofá de cuero\",\n                    \"CANTIDAD\": \"20\"\n                },\n                {\n                    \"ID_FACTURA\": \"29\",\n                    \"FECHA\": \"2023-09-30T00:00:00-06:00\",\n                    \"ID_CLIENTE\": \"1\",\n                    \"NOMBRE_CLIENTE\": \"Cliente 1\",\n                    \"ID_PRODUCTO\": \"3\",\n                    \"NOMBRE_PRODUCTO\": \"Sofá de cuero\",\n                    \"CANTIDAD\": \"20\"\n                },\n                {\n                    \"ID_FACTURA\": \"30\",\n                    \"FECHA\": \"2023-09-30T00:00:00-06:00\",\n                    \"ID_CLIENTE\": \"1\",\n                    \"NOMBRE_CLIENTE\": \"Cliente 1\",\n                    \"ID_PRODUCTO\": \"3\",\n                    \"NOMBRE_PRODUCTO\": \"Sofá de cuero\",\n                    \"CANTIDAD\": \"20\"\n                },\n                {\n                    \"ID_FACTURA\": \"31\",\n                    \"FECHA\": \"2023-09-30T00:00:00-06:00\",\n                    \"ID_CLIENTE\": \"1\",\n                    \"NOMBRE_CLIENTE\": \"Cliente 1\",\n                    \"ID_PRODUCTO\": \"3\",\n                    \"NOMBRE_PRODUCTO\": \"Sofá de cuero\",\n                    \"CANTIDAD\": \"20\"\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
+		}
+	]
+}
