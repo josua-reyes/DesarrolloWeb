@@ -52,7 +52,10 @@ namespace CapaDatos
             }
             finally
             {
-                _Connection.Close();
+                // La conexión ya se libera automáticamente al salir del bloque
+                // `using`, por lo que no es necesario cerrarla manualmente
+                // y evitamos posibles excepciones por haber sido ya
+                // descartada.
             }
 
             return resultadoConsultaDatos;
@@ -125,7 +128,8 @@ namespace CapaDatos
             }
             finally
             {
-                _Connection.Close();
+                // La conexión se cierra automáticamente al finalizar el blo
+                // `using`; no es necesario invocar Close nuevamente.
             }
             return guardarFacturaVentaRespuesta;
         }
